@@ -58,6 +58,7 @@ namespace Exercicios.Iniciais
             Console.WriteLine("16 - Exercício 16");
             Console.WriteLine("17 - Exercício 17");
             Console.WriteLine("100 - Loop - Foreach");
+            Console.WriteLine("101 - Construtores - Veiculo");
         }
 
         public void LimparTela()
@@ -233,13 +234,13 @@ namespace Exercicios.Iniciais
                     this.MontarTelaInicial();
                     break;
                 case 101:                    
-                    var exConstrutores_Moto = new Veiculo(2, 2, 180, 2);
-                    exConstrutores_Moto.ExecutarExercicio();
-                    this.EscreverLinhaVazia(3);
-                    Console.WriteLine("Pressione qualquer tecla para continuar...");
-                    Console.ReadKey();
-                    this.LimparTela();
-                    this.MontarTelaInicial();
+                    //var exConstrutores_Moto = new Veiculo(2, 2, 180, 2);
+                    //exConstrutores_Moto.ExecutarExercicio();
+                    //this.EscreverLinhaVazia(3);
+                    //Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    //Console.ReadKey();
+                    //this.LimparTela();
+                    //this.MontarTelaInicial();
                     break;
                 default:
                     Console.WriteLine("Exercício não encontrado!");
