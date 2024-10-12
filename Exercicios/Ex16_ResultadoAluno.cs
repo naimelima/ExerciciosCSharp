@@ -32,13 +32,11 @@ namespace Exercicios.Iniciais
       {
         Console.WriteLine("O aluno foi aprovado");
       }
-
       else if (media >= 5 && media < 7)
       {
         Console.WriteLine("O aluno está de recuperação");
       }
-
-      else if (media <= 5)
+      else 
       {
         Console.WriteLine("O aluno foi reprovado");
       }

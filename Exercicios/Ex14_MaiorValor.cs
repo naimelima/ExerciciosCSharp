@@ -26,13 +26,11 @@ namespace Exercicios.Iniciais
       {
         Console.WriteLine("O valor 1 é maior que o valor 2");
       }
-
       else if (this.valor2 > this.valor1)
       {
         Console.WriteLine("O valor 2 é maior que o valor 1");
       }
-
-      else if (this.valor1 == this.valor2)
+      else
       {
         Console.WriteLine("Os valores são iguais");
       }

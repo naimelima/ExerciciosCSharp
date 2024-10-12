@@ -23,8 +23,7 @@ namespace Exercicios.Iniciais
       if (this.numero > 10)
       {
         Console.WriteLine("O número é maior que 10");   
-      }                
-      
+      }    
     }  
   }  
 }

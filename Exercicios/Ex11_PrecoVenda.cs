@@ -22,7 +22,6 @@ namespace Exercicios.Iniciais
     public void CalcularPrecoVenda()
      {
        double precovenda = this.precocusto * (1 + this.percentualacrescimo / 100);
-
        Console.WriteLine("O preço de venda é de R$ " + precovenda);
      }
   }

@@ -22,11 +22,11 @@ namespace Exercicios.Iniciais
     {
       if (this.numero >= 100 && this.numero <= 200)
       {
-      Console.WriteLine("O número está no intervalo entre 100 e 200");
+        Console.WriteLine("O número está no intervalo entre 100 e 200");
       }
       else
       {
-      Console.WriteLine("O número não está no intervalo entre 100 e 200");
+        Console.WriteLine("O número não está no intervalo entre 100 e 200");
       }
     }
     
