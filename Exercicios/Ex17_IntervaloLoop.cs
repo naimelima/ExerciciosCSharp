@@ -15,7 +15,7 @@ namespace Exercicios.Iniciais
       int numero;
       bool ehNumero = false;
       
-
+      
       for (int i = 0; i < 10; i++)
       {
         Console.Write($"Numero {i + 1}: ");

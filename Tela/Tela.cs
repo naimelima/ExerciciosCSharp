@@ -218,6 +218,7 @@ namespace Exercicios.Iniciais
                 case 17:
                     var ex17 = new Ex17_IntervaloLoop();
                     ex17.ExecutarExercicio();
+
                     this.EscreverLinhaVazia(3);
                     Console.WriteLine("Pressione qualquer tecla para continuar...");
                     Console.ReadKey();
@@ -233,14 +234,23 @@ namespace Exercicios.Iniciais
                     this.LimparTela();
                     this.MontarTelaInicial();
                     break;
-                case 101:                    
-                    //var exConstrutores_Moto = new Veiculo(2, 2, 180, 2);
-                    //exConstrutores_Moto.ExecutarExercicio();
-                    //this.EscreverLinhaVazia(3);
-                    //Console.WriteLine("Pressione qualquer tecla para continuar...");
-                    //Console.ReadKey();
-                    //this.LimparTela();
-                    //this.MontarTelaInicial();
+                case 101:
+                    var moto1 = new Moto("Titan", 2, 2, 200, 2);
+                    moto1.Abastecer(10);
+                    moto1.Abastecer(50);
+                    moto1.Abastecer(8);
+
+                   var moto2 = new Moto("Kawazaki", 2, 2, 300, 2);
+                    moto2.Abastecer(10);
+                    moto2.Abastecer(80);
+                    moto2.Abastecer(8);
+
+
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
                     break;
                 default:
                     Console.WriteLine("Exercício não encontrado!");
