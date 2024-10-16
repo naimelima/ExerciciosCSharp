@@ -58,6 +58,8 @@ namespace Exercicios.Iniciais
             Console.WriteLine("16 - Exercício 16");
             Console.WriteLine("17 - Exercício 17");
             Console.WriteLine("18 - Exercício 18");
+            Console.WriteLine("19 - Exercício 19");
+            Console.WriteLine("20 - Exercício 20");
             Console.WriteLine("100 - Loop - Foreach");
             Console.WriteLine("101 - Construtores - Veiculo");
         }
@@ -228,6 +230,24 @@ namespace Exercicios.Iniciais
                 case 18:
                     var ex18 = new Ex18_MaiorIdade();
                     ex18.ExecutarExercicio();    
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
+                    break;
+                case 19:
+                    var ex19 = new Ex19_NomeSexo();
+                    ex19.ExecutarExercicio();    
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
+                    break;
+                case 20:
+                    var ex20 = new Ex20_DescontoVendaCarro();
+                    ex20.ExecutarExercicio();
                     this.EscreverLinhaVazia(3);
                     Console.WriteLine("Pressione qualquer tecla para continuar...");
                     Console.ReadKey();
