@@ -19,7 +19,13 @@ namespace Exercicios.Iniciais
         double precoCarro = double.Parse(Console.ReadLine());
 
         Console.WriteLine("Digite o ano do carro:");
-        int anoCarro = int.Parse(Console.ReadLine());        
+        int anoCarro = int.Parse(Console.ReadLine());
+
+
+        
+
+        Console.WriteLine("Deseja continuar?");
+        this.continuar = Console.ReadLine();
       }
     }
 
@@ -48,10 +54,7 @@ namespace Exercicios.Iniciais
         Console.WriteLine($"Desconto: R${this.desconto:F2}");
         Console.WriteLine($"Valor a ser pago: R${valorComDesconto:F2}");
 
-        totalCarros++;
-
-        Console.WriteLine("Deseja continuar? (S/N)");
-        this.continuar = Console.ReadLine();
+        totalCarros++;        
       }  
 
         Console.WriteLine($"Total de carros com o ano até 2000           {this.totalCarros2000OuMenos}");

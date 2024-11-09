@@ -1,6 +1,6 @@
 using System;
 using Exercicios.Loop;
-using Exercicios.Construtores;
+
 
 namespace Exercicios.Iniciais
 {
@@ -59,9 +59,13 @@ namespace Exercicios.Iniciais
             Console.WriteLine("17 - Exercício 17");
             Console.WriteLine("18 - Exercício 18");
             Console.WriteLine("19 - Exercício 19");
+            Console.WriteLine("99 - Exercício 19 com Arquivo");
             Console.WriteLine("20 - Exercício 20");
+            Console.WriteLine("21 - Exercício 21");
+            Console.WriteLine("22 - Exercício 22");
+            Console.WriteLine("23 - Exercício 23");
             Console.WriteLine("100 - Loop - Foreach");
-            Console.WriteLine("101 - Construtores - Veiculo");
+    
         }
 
         public void LimparTela()
@@ -254,6 +258,42 @@ namespace Exercicios.Iniciais
                     this.LimparTela();
                     this.MontarTelaInicial();
                     break;
+                case 21:
+                    var ex21 = new Ex21_ListaDeBandas();
+                    ex21.ExecutarExercicio();
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
+                    break;
+                case 22:
+                    var ex22 = new Ex22_CalcularSomaLista();
+                    ex22.ExecutarExercicio();
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
+                    break;
+            case 23:
+                    var ex23 = new Ex23_MediaAlunoDicionario();
+                    ex23.ExecutarExercicio();
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
+                    break;
+                case 99:
+                    var ex99 = new Ex19_NomeSexo_Com_Arquivo();
+                    ex99.ExecutarExercicio();
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
+                    break;
                 case 100:
                     var exForeach = new ExForeach();
                     exForeach.ExecutarExercicio();
@@ -263,27 +303,7 @@ namespace Exercicios.Iniciais
                     this.LimparTela();
                     this.MontarTelaInicial();
                     break;
-                case 101:
-                    var moto1 = new Moto("Titan", 2, 2, 200, 2);
-                    moto1.Abastecer(10);
-                    moto1.Abastecer(50);
-                    moto1.Abastecer(8);
-
-                   var moto2 = new Moto("Kawazaki", 2, 2, 300, 2);
-                    moto2.Abastecer(10);
-                    moto2.Abastecer(80);
-                    moto2.Abastecer(8);
-
-
-                    this.EscreverLinhaVazia(3);
-                    Console.WriteLine("Pressione qualquer tecla para continuar...");
-                    Console.ReadKey();
-                    this.LimparTela();
-                    this.MontarTelaInicial();
-                    break;
-                default:
-                    Console.WriteLine("Exercício não encontrado!");
-                    break;
+                
             }
         }
 

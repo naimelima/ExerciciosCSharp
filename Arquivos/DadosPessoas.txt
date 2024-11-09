@@ -1,0 +1,7 @@
+Valente;M;15
+Filipinho;F;24
+Mariele;F;41
+Rose;F;61
+Carol;F;9
+Naome1248;M;26
+José Afonso Ribeiro;M;55

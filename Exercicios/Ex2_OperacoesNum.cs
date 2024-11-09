@@ -28,10 +28,10 @@ namespace Exercicios.Iniciais
     int multiplicacao = this.num1 * this.num2;
     int divisao = this.num1 / this.num2;
 
-    Console.WriteLine("A soma é " + soma);
-    Console.WriteLine("A subtração é " + subtracao);
-    Console.WriteLine("A multiplicação é " + multiplicacao);
-    Console.WriteLine("A divisão é " + divisao); 
+    Console.WriteLine($"A soma é {soma}");
+    Console.WriteLine($"A subtração é {subtracao}");
+    Console.WriteLine($"A multiplicação é {multiplicacao}");
+    Console.WriteLine($"A divisão {divisao}"); 
     }
   }  
 }
