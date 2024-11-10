@@ -10,62 +10,58 @@ namespace Exercicios.Iniciais
     Dictionary<int, Estoque> estoque = new Dictionary<int, Estoque>();
 
     public void EntradaDados()
-    {
-       Console.Write("Digite quantos produtos deseja cadastrar no estoque:");
-       int qtdProdutos = int.Parse(Console.ReadLine());
+        {
+            Console.Write("Digite quantos produtos deseja cadastrar no estoque: ");
+            int qtdProdutos = int.Parse(Console.ReadLine());
 
-       for(int i = 0; i < qtdProdutos; i++)
-       {
-          Estoque estoqueProduto = new Estoque(); 
-          Console.Write($"Digite o nome do {i+1}º produto:");
-          estoqueProduto.NomeProduto = Console.ReadLine();
+            for (int i = 0; i < qtdProdutos; i++)
+            {
+                Console.Write($"Digite o nome do {i + 1}º produto: ");
+                string nomeProduto = Console.ReadLine();
 
-          estoqueProduto.Estoque = new List<int>();
-          for(int y = 0;  y < 1; y++)
-          {
-            Console.Write($"Informe a quantidade que contem no estoque do produto {estoqueProduto.NomeProduto}");
-            int registrarQuantidade = int.Parse(Console.ReadLine());
-            estoqueProduto.Estoque.Add(registrarQuantidade);
-          }
-          estoque.Add(i+1, estoqueProduto);
-       }
+                Console.Write($"Digite a quantidade em estoque do produto {nomeProduto}: ");
+                int quantidade = int.Parse(Console.ReadLine());
 
-    }
+                estoque.Add(i + 1, new Estoque { NomeProduto = nomeProduto, Quantidade = quantidade });
+            }
+        }
 
-    public void ExecutarExercicio()
-    {
-        this.EntradaDados();
-        this.EstoqueDeProdutos();
-    }
-    
-    public void EstoqueDeProdutos()
-    {
-         Console.WriteLine("Lista de produtos cadastrados:");
-         foreach(var estoqueProduto in estoque)
-         {
-            Console.WriteLine($"Código: {estoqueProduto.Key} Produto: {estoqueProduto.Value.Estoque}");
-         }
-         
-         Console.Write($"Digite o código do produto que deseja exibir o estoque:");
-         int codProduto = int.Parse(Console.ReadLine());
+        public void ExecutarExercicio()
+        {
+            EntradaDados();
+            EstoqueDeProdutos();
+        }
 
-         if(estoque.ContainsKey(codProduto))
-         {
-            var produtoProcurado = estoque[codProduto];
-            Console.WriteLine($"O estoque do produto {produtoProcurado.NomeProduto} é: {produtoProcurado.Estoque}");
+        public void EstoqueDeProdutos()
+        {
+            Console.WriteLine("Lista de produtos cadastrados:");
+            foreach (var produto in estoque)
+            {
+                Console.WriteLine($"Código: {produto.Key} - Produto: {produto.Value.NomeProduto}");
+            }
 
-         }
-         else
-         {
-            Console.WriteLine("Produto não encontrado.");
-         }
-    }
+            Console.Write("Digite o código do produto que deseja consultar o estoque: ");
+            if (int.TryParse(Console.ReadLine(), out int codProduto))
+            {
+                if (estoque.TryGetValue(codProduto, out Estoque produtoEncontrado))
+                {
+                    Console.WriteLine($"O estoque do produto {produtoEncontrado.NomeProduto} é: {produtoEncontrado.Quantidade}");
+                }
+                else
+                {
+                    Console.WriteLine("Produto não encontrado.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Código de produto inválido.");
+            }
+        }
+   }
 
-  }
-
-  public class Estoque
-  {
-    public string NomeProduto {get; set;}
-    public List<int> Estoque {get; set;}
-  }
+   public class Estoque
+   {
+      public string NomeProduto { get; set; }
+      public int Quantidade { get; set; }
+   }
 }
