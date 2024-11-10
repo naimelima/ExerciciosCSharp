@@ -64,6 +64,7 @@ namespace Exercicios.Iniciais
             Console.WriteLine("21 - Exercício 21");
             Console.WriteLine("22 - Exercício 22");
             Console.WriteLine("23 - Exercício 23");
+            Console.WriteLine("24 - Exercício 24");
             Console.WriteLine("100 - Loop - Foreach");
     
         }
@@ -279,6 +280,15 @@ namespace Exercicios.Iniciais
             case 23:
                     var ex23 = new Ex23_MediaAlunoDicionario();
                     ex23.ExecutarExercicio();
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
+                    break;
+            case 24:
+                    var ex24 = new Ex24_EstoqueLoja();
+                    ex24.ExecutarExercicio();
                     this.EscreverLinhaVazia(3);
                     Console.WriteLine("Pressione qualquer tecla para continuar...");
                     Console.ReadKey();

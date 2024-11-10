@@ -53,7 +53,7 @@ namespace Exercicios.Iniciais
       }
       else
       {
-        Console.WriteLine("Aluno não encontrado");   
+        Console.WriteLine("Aluno não encontrado");
       }
     }     
   }
