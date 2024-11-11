@@ -28,8 +28,8 @@ namespace Exercicios.Iniciais
 
         public void ExecutarExercicio()
         {
-            EntradaDados();
-            EstoqueDeProdutos();
+            this.EntradaDados();
+            this.EstoqueDeProdutos();
         }
 
         public void EstoqueDeProdutos()

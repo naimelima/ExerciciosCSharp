@@ -65,8 +65,9 @@ namespace Exercicios.Iniciais
             Console.WriteLine("22 - Exercício 22");
             Console.WriteLine("23 - Exercício 23");
             Console.WriteLine("24 - Exercício 24");
+            Console.WriteLine("25 - Exercício 25");
             Console.WriteLine("100 - Loop - Foreach");
-    
+            
         }
 
         public void LimparTela()
@@ -289,6 +290,15 @@ namespace Exercicios.Iniciais
             case 24:
                     var ex24 = new Ex24_EstoqueLoja();
                     ex24.ExecutarExercicio();
+                    this.EscreverLinhaVazia(3);
+                    Console.WriteLine("Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                    this.LimparTela();
+                    this.MontarTelaInicial();
+                    break;
+            case 25:
+                    var ex25 = new Ex25_ContaBancaria();
+                    ex25.ExecutarExercicio();
                     this.EscreverLinhaVazia(3);
                     Console.WriteLine("Pressione qualquer tecla para continuar...");
                     Console.ReadKey();
